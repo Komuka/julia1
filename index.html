@@ -1,0 +1,299 @@
+<!--
+     доделать:
+1. адаптивы для смартфона
+2. qa
+3. подключить шрифты
+4. плавная сортировка
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <title>Homework</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <header class="header">
+        <div class="header__developer">
+           <a id="link" href="#">Developer </a>
+        </div>
+        <div class="header__navigation">
+            <a class="header__navigation__item" href="#menu__links">Работы</a>
+            <a class="header__navigation__item" href="#services__title">Услуги </a>
+            <a class="header__navigation__item" href="#aboutme">Обо мне </a>
+            <a class="header__navigation__item" href="#footer">Контакты</a>
+             
+        </div>
+
+    </header>
+    <section class="information">
+        <div class="information__iconfirst">
+            <img src="img/1.png" alt="boy">     
+        </div>
+        <div class="information__title"> 
+            Дизайн, который убеждает и продает
+        </div>
+        <div class="information__iconsecond">
+            <img src="img/2.png" alt="chat">     
+        </div> 
+        <div class="information__description"> Изучаем ваш бизнес. Узнаем, что важно клиентам, <br> 
+            как вызвать доверие и довести до заявки или покупки
+        </div>
+        <div class="information__iconthird">
+            <img src="img/3.png" alt="light">     
+        </div> 
+        <div class="information__connect">
+            <div class="information__connect__tg"> 
+                <a href="#"> Связаться в Telegram</a> 
+            </div>
+            <div class="information__connect__video">
+                <a id="link" href="#"> &#9655; Видеопортфолио </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div id="menu__links"> 
+            <button onclick="SortingAll ()" id="all" href="#">Все </button>
+            <button onclick="SortingKey ()" id="key" href="#">Сайт под ключ </button>
+            <button onclick="SortingDev ()" id="dev" href="#">Разработка </button>
+            <button onclick="SortingDes ()" id="des" href="#">Дизайн </button>
+        </div>
+        <div class="menu__portfolio__first"> 
+            <img id="strizhi" src="img/portfolio1.svg" alt="strizhi"> 
+        </div>
+        <div class="menu__portfolio__second">
+            <img id="stereo" src="img/portfolio2.svg" alt="stereo">
+            <img id="ermitag" src="img/portfolio3.svg" alt="ermitag">
+        </div>
+        <div class="menu__portfolio__third">
+            <img id="sun" src="img/portfolio4.svg" alt="sun">
+        </div>
+        <div class="menu__portfolio__fourth">
+            <img id="yellow" src="img/portfolio5.svg" alt="yellow">
+            <img id="flats" src="img/portfolio6.svg" alt="flats">
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <div class="aboutme__photo">
+            <img src="img/me.png" alt="aboutme">
+        
+            <div class="aboutme__icon">
+                <img src="img/5.png" alt="champ">
+            </div>
+        </div>
+
+        <div class="aboutme__text">
+            <div class="aboutme__text__title">
+                Designer & Developer
+            </div>
+            <div class="aboutme__text__description">
+                Меня зовут гигачад. За 3 года создания сайтов я основал свою 
+                 студию, собрал людей, готовых к плотной работе.
+                <br> <br>
+                Запустили лендинг и б2б продукт для UFC. Работали с ВШЭ и 
+                МИЭМом. Запустили множество эвентовых проектов и 
+                брендинг. Готовы забирать в команду лучших, прокачивать их 
+                компетенции, и взращивать русское айти комьюнити, 
+            </div>
+            <div class="aboutme__text__facts">
+                <div class="aboutme__text__fact">
+                    <div class="fact__number" >40+ </div> 
+                    <div class="fact__text"> сайтов запустили </div>
+                </div>
+                <div class="aboutme__text__fact">
+                    <div class="fact__number" >100% </div> 
+                    <div class="fact__text"> выполнено в срок </div>
+                </div>
+                <div class="aboutme__text__fact">
+                    <div class="fact__number" >10 </div> 
+                    <div class="fact__text"> лет <br> опыта </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="services">
+        <div id="services__title"> Услуги </div>
+        <div class="services__items">
+            <div class="services__item">
+            <p class="service__item__number">01</p>
+            <p class="service__item__title"> Сайты на Тильде</p>   
+            <p class="service__item__text">Изучаем ваш бизнес. Узнаем, что <br>
+            важно клиентам, как вызвать <br>
+            доверие и довести до заявки или<br>
+            покупки</p> 
+            <p> <img src="img/line.png" alt="line"> </p>
+            <p class="service__item__price"> От 250 000 р</p>
+            </div>
+
+            <div class="services__item">
+            <p class="service__item__number">02</p>
+            <p class="service__item__title"> Веб-дизайн</p>   
+            <p class="service__item__text">Если есть своя команда <br> 
+                разработчиков или фрилансер. <br> 
+                И нужен только дизайн сайта без <br> 
+                разработки</p> 
+            <p> <img src="img/line.png" alt="line"> </p>
+            <p class="service__item__price"> От 120 000 р</p>
+            </div>
+
+            <div class="services__item">
+                <p class="service__item__number">03</p>
+                <p class="service__item__title"> Арт-дирекшн</p>   
+                <p class="service__item__text">Проконтролирую ваш отдел <br> дизайна, 
+                    выявлю недочеты. Помогу 
+                     наладить коммуникацию <br><br></p> 
+                <p> <img src="img/line.png" alt="line"> </p>
+                <p class="service__item__price"> От 70 000 р</p>
+            </div>   
+    </section>      
+    <section class="calculating"> 
+        <div class="calculating__title"> Подсчёт стоимости</div>
+        
+        <div class="calculating__iconfirst">
+            <img src="img/timer.png" alt="timer">
+        </div>
+<div>
+    <div id="calculating__a">
+        <div id="title__a"> Примерный подсчёт: </div>
+        <div class="calculating__text"> Стоимость</div>
+        <div id="calculating__price"></div>
+        <div class="calculating__text"> Примерные сроки </div>
+        <div class="calculating__time"> 14 рабочих дней</div>
+        <button class="calculating__buttonsecond"> Обсудить проект</button> 
+    </div>
+        <div class="calculating__q">
+            <select id="calculating__type">
+                <option id="calculating__type__none" value="0"> Тип работы</option>
+                <option id="calculating__type__tilda" value="1">Сайт на Тильде</option>
+                <option id="calculating__type__web" value="2">Веб-дизайн</option>
+                <option id="calculating__type__art" value="3">Арт-дирекшн</option>
+            </select>
+            <select id="calculating__size"> 
+                <option value="0"> Насколько большой проект?</option>
+                <option id="calculating__type__big" value="1"> очень большой</option>
+                <option id="calculating__type__small" value="2"> большой, но не очень </option>
+            </select>
+            <p id="autumn__school"><input id="calculating__checkbox" type="checkbox" name="a" value="1"> Осенняя школа?? </p>
+            <button onclick="ShowCalculating (); CalculatingPrice ()" class="calculating__button"> Рассчитать стоимость</button>
+            <div class="calculating__iconsecond">
+                <img src="img/1.png" alt="boy">     
+            </div>
+
+        </div> 
+
+        
+       
+    </div>
+ 
+    </section>  
+    <section class="qa">
+        <div class="qa__title"> Вопрос-ответ </div>
+        <div class="qa__blocks"> 
+        
+            <button class="qa__accordion"> Делаете только дизайн? </button>
+                <div class="qa__content">
+                    <p>
+                        если берете сайт под ключ, то еще можем покормить комплексом из столовой.... <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis natus earum id explicabo laborum saepe nihil? Mollitia, reiciendis quidem inventore doloremque sed consequuntur, fugiat possimus debitis praesentium atque ea!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, recusandae! Dolor laboriosam eum necessitatibus adipisci minima doloribus omnis veniam, culpa dolores itaque, iure architecto delectus? Ad earum officiis quas nobis!
+                     </p>
+                </div>
+            <button class="qa__accordion"> Почему Тильда </button>
+                <div class="qa__content">
+                    <p> Тильда уже давно перестала быть просто конструктором. Сейчас на платформе разрабатывают 
+                уникальные лендинги и даже небольшие интернет магазины. </p>
+
+                    <p> <ul> А еще: 
+                            <li> Не нужен программист, тильдой легко управлять</li>
+                            <li> Можно менять контент самому без помощи специалиста</li>
+                            <li> Многие делают сайты именно на тильде. Например сбер, яндекс, и тд</li>
+                            <li> Можно подключить разные сервисы, формы (телеграм, мейлчамп, crm)</li>
+                            <li> Адекватные цены тарифов</li>
+                    </p> </ul>
+                </div>
+            <button class="qa__accordion"> Какие сроки? </button>
+                <div class="qa__content">
+                    <p>
+                        обещанного 3 года ждут...
+                    </p>
+                </div>
+            <button class="qa__accordion"> Как происходит оплата? </button>
+                <div class="qa__content">
+                    <p>
+                        в тенге
+                    </p>
+                </div>
+            <button class="qa__accordion"> Сколько правок можно внести? </button>
+                <div class="qa__content">
+                    <p>
+                         — сколько?... — много... — ну сколько? — 4
+                    </p>
+                </div>
+            <button class="qa__accordion"> Работаете со срочными проектами? </button>
+            <div class="qa__content">
+                <p>
+                    после проекта по эк стату за 10 часов справимся с чем угодно
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <p class="footer__iconfirst">
+            <img src="img/3.png" alt="light">     
+        </p> 
+        <div class="footer__title">
+            Оставьте заявку
+        </div> 
+        <div class="footer__text">
+            Я сама напишу Вам и сообщу все детали 
+        </div>
+    <div class="footer__containar">
+        <div class="footer__form">
+            <input class="footer__name" type="text" value="Имя">
+            <input class="footer__name" type="email" value="Почта">
+            <select class="footer__select">
+                <option value="1"> Услуга</option>
+                <option value="1"> Веб-дизайн</option>
+                <option value="1"> Разработка</option>
+                <option value="1"> Арт-дирекшн</option>
+            </select>
+            <input class="footer__commentary" type="text" value="Комментарий">
+            <button class="footer__button"> Отправить сообщение</button>
+        </div>
+        <div class="footer__social">
+            <div class="footer__social__item">
+                <img src="img/f.png" alt="facebook">  
+            </div>
+            
+            <div class="footer__social__item">
+                <img src="img/t.png" alt="twitter"> 
+            </div>
+
+            <div class="footer__social__item">
+                <img src="img/vk.png" alt="vk"> 
+            </div>
+        </div>
+
+    </div>   
+        <div class="footer__iconthird">
+            <img src="img/2.png" alt="timer">     
+        </div> 
+        <div class="footer__iconsecond">
+            <img src="img/1.png" alt="boy">     
+        </div> 
+
+    </section>
+
+    <script src="sript.js"></script>
+</body>
+    
+</html>
